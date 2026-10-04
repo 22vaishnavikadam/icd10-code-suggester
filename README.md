@@ -1,5 +1,10 @@
 # ICD-10 Code Suggester (US Healthcare AI/ML)
    ![Demo](docs/demo.png)
+   ## RAG layer
+`POST /suggest/explain` cross-checks the classifier against retrieved coding guidelines,
+flags low-agreement cases for human review, and explains the result. Works offline;
+set OPENAI_API_KEY to enable LLM explanations (redacted text only, output validated
+against retrieved codes).
 Reads a free-text clinical note, **redacts PHI**, and suggests ICD-10-CM codes with
 confidence scores and the evidence terms behind each suggestion (explainable, coder-in-the-loop).
 
