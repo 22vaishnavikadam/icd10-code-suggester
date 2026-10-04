@@ -1,5 +1,5 @@
 # ICD-10 Code Suggester (US Healthcare AI/ML)
-
+   ![Demo](docs/demo.png)
 Reads a free-text clinical note, **redacts PHI**, and suggests ICD-10-CM codes with
 confidence scores and the evidence terms behind each suggestion (explainable, coder-in-the-loop).
 
